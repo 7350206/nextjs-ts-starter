@@ -5,3 +5,5 @@
   "strict" :false           - change to true
   "strictNullChecks": true, - add
   will save from a lot of runtime issues
+
+4 - then rename *.js to *.ts
