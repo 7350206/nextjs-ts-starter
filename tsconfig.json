@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // absolute imports here
     "baseUrl": "./",
     "paths": {
       "@components/*": ["components/*"],
