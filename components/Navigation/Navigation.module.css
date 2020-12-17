@@ -1,0 +1,22 @@
+.list{
+  list-style: none;
+  padding: 1em 0;
+  display: flex;
+}
+
+/* for stacking element , some special
+  wherever a direct child is an adjasent sibling
+  its have a margin-left
+*/
+.list > * + * {
+  margin-left: 1rem;
+}
+
+.NavLink{
+  text-decoration: underline 2px;
+}
+
+.NavLink:hover,
+.NavLink:focus{
+  text-decoration: underlined dotted 2px;
+}
