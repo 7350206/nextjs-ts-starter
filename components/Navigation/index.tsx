@@ -10,26 +10,28 @@ const LINKS = [
     url:"/"
   },
   {
+    name: "Product",
+    url: "/product"
+  },
+  {
     name: "About",
     url:"/about"
   }
 ]
 
 type Nav = {
-  path:string
+  path: string
   children: ReactNode
 }
 
 function NavLink({path, children}: Nav){
   return (
     <Link href={path}>
-      {/* !!! className != style */}
+      {/* className != style */}
       <a className={styles.NavLink}>{children}</a>
     </Link>
   )
 }
-
-
 
 export default function Navigation(){
 
