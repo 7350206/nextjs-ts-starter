@@ -3,6 +3,7 @@
 import { InferGetStaticPropsType } from 'next';
 
 import Head from 'next/head'
+import Link from 'next/link';
 import Header from '@components/Header';
 import Navigation from '@components/Navigation';
 import { getPostsList } from '@shared/util';
@@ -25,8 +26,11 @@ function Home({ posts }:InferGetStaticPropsType<typeof getStaticProps>) {
           <ul>
             {posts.map((slug) => (
               <li key={slug}>
-                {/* to make more readable */}
-                {slug.replace(/-/g, " ")}
+                <Link href={`post/${slug}`}>
+                  <a>
+                    {slug.replace(/-/g, " ")}
+                  </a>
+                </Link>
               </li>
             ))}
           </ul>
